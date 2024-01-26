@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  /* Danger Colors */
+  --danger-light: #fca5a5;
+  --danger-mid: #ef4444;
+  --danger-dark: #7f1d1d;
+  /*Primary Colors*/
+  --primary-light: #93c5fd;
+  --primary-mid: #3b82f6;
+  --primary-dark: #1d4ed8;
+  /* Success Colors */
+  --success-light: #4ade80;
+  --success-mid: #22c55e;
+  --success-dark: #15803d;
+
+  --bg-z1: #e2e8f0;
+  --bg-z2: #cbd5e1;
+
+  --border: #475569;
+  --border-active: #3b82f6;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  line-height: 100%;
+}

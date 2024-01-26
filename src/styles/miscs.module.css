@@ -1,0 +1,142 @@
+/* Buttons */
+/*Primary*/
+
+.primary_btn {
+  background-color: var(--primary-mid);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.primary_btn:hover {
+  transform: scale(105%);
+}
+
+.block_primary_btn {
+  background-color: var(--primary-mid);
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.block_primary_btn:hover {
+  transform: scale(105%);
+}
+
+.inv_primary_btn {
+  background-color: var(--primary-light);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  transition: all 0.1s ease-in-out;
+}
+
+.inv_primary_btn:hover {
+  transform: scale(105%);
+}
+
+/* Danger */
+
+.danger_btn {
+  background-color: var(--danger-mid);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.danger_btn:hover {
+  transform: scale(105%);
+}
+
+.inv_danger_btn {
+  background-color: var(--danger-light);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--danger-dark);
+  transition: all 0.1s ease-in-out;
+}
+
+.inv_danger_btn:hover {
+  transform: scale(105%);
+}
+
+/* Success */
+
+.success_btn {
+  background-color: var(--success-mid);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.success_btn:hover {
+  transform: scale(105%);
+}
+
+.inv_success_btn {
+  background-color: #bbf7d0;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--success-dark);
+  transition: all 0.1s ease-in-out;
+}
+.inv_success_btn:hover {
+  transform: scale(105%);
+}
+
+.input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid var(--primary-dark);
+}
+
+.input::placeholder {
+  color: var(--border);
+}
+.error {
+  color: var(--danger-mid);
+}
+
+.anchor {
+  color: var(--primary-mid);
+}
+
+.anchor:hover {
+  cursor: pointer;
+}
+
+/* Media queries*/
+
+/* Phone */
+@media (max-width: 500px) {
+}
+
+/* Tablet */
+@media (max-width: 700px) {
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
