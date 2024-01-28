@@ -16,6 +16,7 @@
 
   --bg-z1: #e2e8f0;
   --bg-z2: #cbd5e1;
+  --bg-z3: #475569;
 
   --border: #475569;
   --border-active: #3b82f6;
@@ -37,4 +38,8 @@ h5,
 h6,
 span {
   line-height: 100%;
+}
+
+.salmon {
+  background-color: salmon;
 }

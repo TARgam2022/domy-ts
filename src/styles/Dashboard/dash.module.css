@@ -1,0 +1,7 @@
+.lines {
+  border: solid 1px red;
+  height: 100%;
+  width: calc(100% - 250px);
+  display: flex;
+  margin-left: 250px;
+}

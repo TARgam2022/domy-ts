@@ -1,3 +1,5 @@
+import Navbar from "@/components/Navbar";
+import dashboard from "@/styles/Dashboard/dash.module.css";
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +7,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={dashboard.positioning}>
+        <Navbar />
+        <div className={dashboard.lines}>{children}</div>
+      </body>
     </html>
   );
 }

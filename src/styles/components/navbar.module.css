@@ -1,0 +1,26 @@
+.container {
+  background-color: var(--bg-z1);
+  width: 250px;
+  height: 100%;
+  padding: 0;
+  z-index: 20;
+  position: fixed;
+}
+.section {
+  padding: 20px;
+  display: flex;
+  justify-items: center;
+  gap: 10px;
+}
+
+.section:hover {
+  background-color: var(--bg-z2);
+  cursor: pointer;
+}
+
+.brand {
+  font: 700;
+  padding: 20px;
+  justify-items: center;
+  border-bottom: solid 1px var(--border);
+}
