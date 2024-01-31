@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import "@/styles/globals.css";
 import dashboard from "@/styles/Dashboard/dash.module.css";
 export default function RootLayout({
   children,
