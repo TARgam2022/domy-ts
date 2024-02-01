@@ -9,7 +9,7 @@ import { MdDeliveryDining } from "react-icons/md";
 
 const usersPage = () => {
   var users = [
-    new user("Thomas", "admin", "01234567890", true, false),
+    new user("Thomas", "admin", "3004682624", true, false),
     new user("Andres", "admin", "01234567890", false, true),
     new user("Angela", "admin", "01234567890", false, true),
     new user("Bailey", "admin", "01234567890", false, true),
@@ -34,7 +34,7 @@ const usersPage = () => {
           <li className={domys.filters}>
             <span className={domys.item}>Nombre</span>
             <span className={domys.item}>Rol</span>
-            <span className={domys.item}>Telefono</span>
+            <span className={domys.item}>Telefono (+57)</span>
             <span className={domys.item}>Activo</span>
             <span className={domys.item}>Ocupado</span>
             <span className={domys.item}>---</span>

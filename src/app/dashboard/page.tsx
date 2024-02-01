@@ -6,7 +6,8 @@ import home from "@/styles/Dashboard/home.module.css";
 const dashboardHome = () => {
   return (
     <div className={home.lines}>
-      <div className={home.card}></div>
+      <h1 className={home.title}>Home</h1>
+      Wtf am i doing with my life
     </div>
   );
 };
