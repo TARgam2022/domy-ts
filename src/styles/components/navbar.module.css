@@ -1,0 +1,42 @@
+.container {
+  background-color: var(--bg-z1);
+  width: 260px;
+  height: 100%;
+  padding: 0;
+  z-index: 20;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section {
+  padding: 16px;
+  display: flex;
+  justify-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding-left: 16px;
+  color: #111827;
+  transition: all 0.2s;
+}
+
+.section:hover {
+  background-color: var(--bg-z2);
+  cursor: pointer;
+  padding-left: 22px;
+}
+
+.brand {
+  font: 700;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 22px;
+  justify-items: center;
+}
+
+.indicator {
+  padding: 10px;
+  color: var(--index);
+}

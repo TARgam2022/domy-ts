@@ -1,0 +1,88 @@
+.card {
+  padding: 20px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 1200px;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card:hover {
+  transform: scale(102%);
+}
+
+.title {
+  color: var(--bg-z3);
+  font-weight: 400;
+}
+
+.delivers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.paragraf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+.text {
+  font-weight: 700;
+}
+
+.icon {
+  color: white;
+  background-color: var(--primary-mid);
+  padding: 15px;
+  font-size: 32px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.infos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 40px;
+}
+
+.icon.done {
+  background-color: var(--succcess-mid);
+}
+.proccesing {
+  background-color: var(--warning-mid);
+}
+.not_done {
+  background-color: var(--danger-mid);
+}
+
+.icon_pending {
+  color: white;
+  background-color: var(--bg-z3);
+  padding: 15px;
+  font-size: 32px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}

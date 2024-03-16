@@ -5,6 +5,10 @@
   --danger-light: #fca5a5;
   --danger-mid: #ef4444;
   --danger-dark: #7f1d1d;
+  /* Warning Colors */
+  --warning-light: #fde047;
+  --warning-mid: #eab308;
+  --warning-dark: #a16207;
   /*Primary Colors*/
   --primary-light: #93c5fd;
   --primary-mid: #3b82f6;
@@ -16,6 +20,9 @@
 
   --bg-z1: #e2e8f0;
   --bg-z2: #cbd5e1;
+  --bg-z3: #475569;
+
+  --index: #64748b;
 
   --border: #475569;
   --border-active: #3b82f6;
@@ -25,6 +32,9 @@ body {
   font-family: "Lato", sans-serif;
   height: 100%;
   margin: 0;
+  color: #111827;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 a,
@@ -37,4 +47,17 @@ h5,
 h6,
 span {
   line-height: 100%;
+}
+
+.salmon {
+  background-color: salmon;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
 }

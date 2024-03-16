@@ -1,0 +1,86 @@
+.title {
+  color: var(--bg-z3);
+  font-weight: 400;
+}
+
+.card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.list_card {
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(3, 150px) repeat(2, 100px) repeat(2, 130px);
+  grid-template-rows: 70px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  transition: all 0.2s;
+}
+.list_card:hover {
+  background-color: var(--bg-z1);
+  cursor: default;
+}
+.active {
+  color: var(--success-mid);
+}
+
+.un_active {
+  color: var(--danger-mid);
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit {
+  gap: 10px;
+  font-size: 20px;
+  transition: all 0.1s;
+}
+
+.edit:hover {
+  color: var(--success-mid);
+  transform: scale(110%);
+}
+
+.erase {
+  color: var(--danger-mid);
+  gap: 10px;
+  font-size: 20px;
+  transition: all 0.1s;
+}
+
+.erase:hover {
+  color: var(--danger-dark);
+  transform: scale(110%);
+}
+
+.deliver {
+  color: var(--warning-mid);
+}
+
+.filters {
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(3, 150px) repeat(2, 100px) repeat(2, 130px);
+  grid-template-rows: 70px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border-bottom: dotted 2px var(--bg-z1);
+}
+
+.scroller {
+  overflow: scroll;
+  height: 600px;
+  overflow-x: hidden;
+}
+.spacer {
+  margin-top: 80px;
+}
