@@ -6,21 +6,33 @@ import { IoArrowForward } from "react-icons/io5";
 import { MdDeliveryDining } from "react-icons/md";
 import { FaShop } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
+import { deliveryList } from "@/models/variables/deliveries";
+import miscs from "@/styles/miscs.module.css";
 
 const deliveriesPage = () => {
-  var deliveries = [
-    new delivery("Thomas", "Primavera", "Andres", "Balmoral", "Angela", 1),
-    new delivery("Andres", "Primavera", "Angela", "Balmoral", "Canela", 2),
-    new delivery("Andres", "Cr 6 #2-6", "Angela", "Balmoral", "Canela", 3),
-    new delivery("Thomas", "Primavera", "Andres", "Balmoral", "Angela", 4),
-    new delivery("Andres", "Primavera", "Angela", "Balmoral", "Canela", 5),
-  ];
+  function createDelivery() {
+    deliveryList.push(
+      new delivery(
+        "thomas",
+        "primaver cond",
+        "Angela",
+        "Providencia",
+        "on enum",
+        3
+      )
+    );
+  }
+
+  function deleteDelivery() {
+    deliveryList.pop();
+  }
 
   return (
     <div>
       <h1 className={deliver.title}>Domicilios</h1>
       <div className={deliver.delivers}>
-        {deliveries.map((el) => (
+        <div className={deliver.card}></div>
+        {deliveryList.map((el) => (
           <div className={deliver.card}>
             <div className={deliver.info}>
               <span className={deliver.paragraf}>
@@ -251,6 +263,9 @@ const deliveriesPage = () => {
               <span className={deliver.paragraf}>
                 <p className={deliver.text}>Punto B:</p>
                 {el.addresseeAddress}
+              </span>
+              <span className={deliver.paragraf}>
+                <button className={miscs.primary_btn}>Copiar Enlace</button>
               </span>
             </div>
           </div>

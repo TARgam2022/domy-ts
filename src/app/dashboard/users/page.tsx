@@ -6,26 +6,9 @@ import { CiEdit, CiEraser } from "react-icons/ci";
 import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { MdDeliveryDining } from "react-icons/md";
+import { userList } from "@/models/variables/users";
 
 const usersPage = () => {
-  var users = [
-    new user("Thomas", "admin", "3004682624", true, false),
-    new user("Andres", "admin", "01234567890", false, true),
-    new user("Angela", "admin", "01234567890", false, true),
-    new user("Bailey", "admin", "01234567890", false, true),
-    new user("Canela", "admin", "01234567890", true, false),
-    new user("Thomas", "admin", "01234567890", true, false),
-    new user("Andres", "admin", "01234567890", false, true),
-    new user("Angela", "admin", "01234567890", false, true),
-    new user("Bailey", "admin", "01234567890", false, true),
-    new user("Canela", "admin", "01234567890", true, false),
-    new user("Thomas", "admin", "01234567890", true, false),
-    new user("Andres", "admin", "01234567890", false, true),
-    new user("Angela", "admin", "01234567890", false, true),
-    new user("Bailey", "admin", "01234567890", false, true),
-    new user("Canela", "admin", "01234567890", true, false),
-  ];
-
   return (
     <div>
       <h1 className={domys.title}>Domiciliarios</h1>
@@ -41,7 +24,7 @@ const usersPage = () => {
             <span className={domys.item}>---</span>
           </li>
           <div className={domys.spacer}></div>
-          {users.map((el) => (
+          {userList.map((el) => (
             <li className={domys.list_card}>
               <span className={domys.item}>{el.name}</span>
               <span className={domys.item}>{el.role}</span>
