@@ -18,7 +18,6 @@ const deliveriesPage = () => {
       {deliveries.map((deliver: DeliveriesData) => (
         <p>
           <Delivery
-            idn={deliver.id}
             status={deliver.status}
             destination={deliver.destination}
             deliverer={deliver.deliverer}

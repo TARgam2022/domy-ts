@@ -1,7 +1,20 @@
 "use client";
 import React, { useState } from "react";
 import deliver from "@/styles/Dashboard/delivery.module.css";
-const Delivery = ({ idn, destination, deliverer, sender, status }) => {
+
+interface DeliveryProps {
+  destination: string;
+  deliverer: string;
+  sender: string;
+  status: number;
+}
+
+const Delivery: React.FC<DeliveryProps> = ({
+  destination,
+  deliverer,
+  sender,
+  status,
+}) => {
   let text: string = "";
   const [style, setStyle] = useState({});
 
