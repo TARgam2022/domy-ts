@@ -13,76 +13,24 @@
   transform: scale(102%);
 }
 
-.title {
-  color: var(--bg-z3);
-  font-weight: 400;
-}
-
-.delivers {
+.container {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.paragraf {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.info {
-  display: flex;
-  justify-content: space-around;
-}
-.text {
-  font-weight: 700;
-}
-
-.icon {
-  color: white;
-  background-color: var(--primary-mid);
-  padding: 15px;
-  font-size: 32px;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-}
-
-.status {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
   gap: 10px;
 }
-.infos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 
-.arrow {
-  font-size: 40px;
+.progress {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  border-radius: 10px;
+  background-color: var(--bg-z1);
 }
-
-.icon.done {
-  background-color: var(--succcess-mid);
-}
-.proccesing {
-  background-color: var(--warning-mid);
-}
-.not_done {
-  background-color: var(--danger-mid);
-}
-
-.icon_pending {
-  color: white;
-  background-color: var(--bg-z3);
-  padding: 15px;
-  font-size: 32px;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
+.progress_done {
+  position: relative;
+  height: 25px;
+  border-radius: 10px;
+  background-color: var(--success-mid);
+  transition: all 0.2s;
 }
