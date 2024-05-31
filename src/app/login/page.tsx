@@ -20,7 +20,12 @@ const loginPage = () => {
   };
 
   return (
-    <body>
+    <div
+      style={{
+        backgroundImage: `url(.../assets/bg-purple.svg)`,
+        backgroundSize: "cover",
+      }}
+    >
       <div className={`${login.card} ${miscs.center}`}>
         <Link href="/" className={login.back}>
           <FaArrowAltCircleLeft />
@@ -109,7 +114,7 @@ const loginPage = () => {
           </div>
         )}
       </div>
-    </body>
+    </div>
   );
 };
 

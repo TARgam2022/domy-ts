@@ -31,6 +31,6 @@
   position: relative;
   height: 25px;
   border-radius: 10px;
-  background-color: var(--success-mid);
+  background-color: var(--primary-mid);
   transition: all 0.2s;
 }
