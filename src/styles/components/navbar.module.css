@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--bg-z1);
+  background-color: rgb(245, 245, 245);
   width: 260px;
   height: 100%;
   padding: 0;
@@ -21,9 +21,10 @@
 }
 
 .section:hover {
-  background-color: var(--bg-z2);
+  background-color: var(--primary-mid);
   cursor: pointer;
   padding-left: 22px;
+  color: white;
 }
 
 .brand {

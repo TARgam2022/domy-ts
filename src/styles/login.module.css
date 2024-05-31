@@ -1,3 +1,8 @@
+.login_bg {
+  background-image: url("../assets/bg-purple.svg");
+  background-position: center;
+  background-size: cover;
+}
 .card {
   padding: 10px;
   border-radius: 5px;
