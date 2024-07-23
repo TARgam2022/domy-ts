@@ -1,0 +1,84 @@
+<div class="row">
+  <div class="col-sm-12">
+    <h5 class="mb-3">Domicilios</h5>
+    <button type="button" class="btn btn-primary text-white me-2 mb-2" (click)="isMultiCollapsed1 = !isMultiCollapsed1"
+      [attr.aria-expanded]="!isMultiCollapsed1" aria-controls="multiCollapseExample1">
+      <i class="feather icon-plus me-1"></i>
+      Crear Domicilio
+    </button>
+    <app-card class="collapse" cardTitle="Crear Domicilio" [options]="false" id="multiCollapseExample1"
+      [ngbCollapse]="isMultiCollapsed1">
+      <form (submit)="handleClick()" action="javascript:">
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Remitente</label>
+            <input type="text" class="form-control" name="adressee" [(ngModel)]="adressee" required />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Direccion Remitente</label>
+            <input type="text" class="form-control" name="adresseeDirection" [(ngModel)]="adresseeDirection" required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Destinatario</label>
+            <input type="text" class="form-control" name="deliverer" [(ngModel)]="deliverer" required />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Direccion Destinatario</label>
+            <input type="text" class="form-control" name="delivererDirection" [(ngModel)]="delivererDirection"
+              required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Descripcion</label>
+            <input type="text" class="form-control" name="Description" placeholder="agrega una pequena descripcion"
+              [(ngModel)]="description" required />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>select</option>
+              <option>Large select</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Crear</button>
+      </form>
+    </app-card>
+  </div>
+  <div class="col-xl-12">
+    <app-card cardTitle="Domicilios" [options]="false" blockClass="table-border-style">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Id.</th>
+              <th>Dir. Destinatario</th>
+              <th>Destinatario</th>
+              <th>Dir. Remitente</th>
+              <th>Remitente</th>
+              <th>Domiciliario</th>
+              <th>---</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let delivery of deliveries" class="table">
+              <th scope="row">{{delivery.id}}</th>
+              <th>{{delivery.adresseeDirection}}</th>
+              <th>{{delivery.adressee}}</th>
+              <th>{{delivery.delivererDirection}}</th>
+              <th>{{delivery.deliverer}}</th>
+              <th>{{delivery.deliveryMan}}</th>
+              <th><i class="dropdown-toggle dropdown-toggle-split"></i></th>
+              <th>
+
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>
