@@ -1,39 +1,22 @@
-import { DeliveriesData } from "./deliveries.interface";
+import { delivery } from "./interfaces/delivery.class";
 
-export let deliveries: DeliveriesData[] = [
-  {
-    id: 1,
-    destination: "Destination",
-    deliverer: "Delivery man",
-    sender: "Sender",
-    status: 1,
-  },
-  {
-    id: 2,
-    destination: "Destination",
-    deliverer: "Delivery man",
-    sender: "Sender",
-    status: 2,
-  },
-  {
-    id: 3,
-    destination: "Destination",
-    deliverer: "Delivery man",
-    sender: "Sender",
-    status: 3,
-  },
-  {
-    id: 3,
-    destination: "Destination",
-    deliverer: "Delivery man",
-    sender: "Sender",
-    status: 4,
-  },
-  {
-    id: 3,
-    destination: "Destination",
-    deliverer: "Delivery man",
-    sender: "Sender",
-    status: 5,
-  },
-];
+export let DELIVERIES: delivery[] = [
+    {
+        id: 1,
+        adressee: "adressee",
+        adresseeDirection: "adresseeDirection",
+        deliverer: "deliverer",
+        delivererDirection: "delivererDirection",
+        deliveryMan: "deliveryMan",
+        description: "Lorem Ipsum It dolor"
+    },
+    {
+        id: 2,
+        adressee: "adressee",
+        adresseeDirection: "adresseeDirection",
+        deliverer: "deliverer",
+        delivererDirection: "delivererDirection",
+        deliveryMan: "deliveryMan",
+        description: "Lorem Ipsum It dolor"
+    }
+]
