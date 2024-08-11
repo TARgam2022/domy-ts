@@ -1,1 +1,26 @@
-<p>domiciliarios works!</p>
+<div class="col-xl-12">
+    <app-card cardTitle="Domicilios" [options]="false" blockClass="table-border-style">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr class="table-active">
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Numero de Cel</th>
+                        <th>Ocupado?</th>
+                        <th>En Linea?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table" *ngFor="let d of domicilliaries">
+                        <th>{{d.id}}</th>
+                        <th>{{d.firstName}}</th>
+                        <th>{{d.lastName}}</th>
+                        <th>{{d.cellphone}}</th>
+                        <th>{{d.occupied}}</th>
+                        <th>{{d.connected}}</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>

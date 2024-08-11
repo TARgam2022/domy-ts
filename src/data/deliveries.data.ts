@@ -8,15 +8,7 @@ export let DELIVERIES: delivery[] = [
         deliverer: "deliverer",
         delivererDirection: "delivererDirection",
         deliveryMan: "deliveryMan",
-        description: "Lorem Ipsum It dolor"
+        description: "Lorem Ipsum It dolor",
+        status: 2
     },
-    {
-        id: 2,
-        adressee: "adressee",
-        adresseeDirection: "adresseeDirection",
-        deliverer: "deliverer",
-        delivererDirection: "delivererDirection",
-        deliveryMan: "deliveryMan",
-        description: "Lorem Ipsum It dolor"
-    }
 ]

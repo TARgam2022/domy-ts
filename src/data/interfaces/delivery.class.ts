@@ -6,4 +6,5 @@ export interface delivery {
     delivererDirection: string;
     deliveryMan: string;
     description: string;
+    status: number;
 }
