@@ -10,13 +10,16 @@
       [ngbCollapse]="isMultiCollapsed1">
       <form (submit)="handleClick()" action="javascript:">
         <div class="row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Remitente</label>
-            <input type="text" class="form-control" name="adressee" [(ngModel)]="adressee" required />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Direccion Remitente</label>
-            <input type="text" class="form-control" name="adresseeDirection" [(ngModel)]="adresseeDirection" required />
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Remitente</label>
+              <input type="text" class="form-control" name="adressee" [(ngModel)]="adressee" required />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Direccion Remitente</label>
+              <input type="text" class="form-control" name="adresseeDirection" [(ngModel)]="adresseeDirection"
+                required />
+            </div>
           </div>
         </div>
         <div class="row">
@@ -38,9 +41,9 @@
           </div>
           <div class="form-group col-md-6">
             <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-              <option selected>select</option>
-              <option>Large select</option>
+            <select id="inputState" (change)="changePerson($event)" class="form-control">
+              <option selected>selecciona</option>
+              <option *ngFor="let d of domicilliaries">{{d.firstName}}</option>
             </select>
           </div>
         </div>
@@ -53,7 +56,7 @@
       <div class="table-responsive">
         <table class="table">
           <thead>
-            <tr>
+            <tr class="table-active">
               <th>Id.</th>
               <th>Dir. Destinatario</th>
               <th>Destinatario</th>
@@ -71,9 +74,11 @@
               <th>{{delivery.delivererDirection}}</th>
               <th>{{delivery.deliverer}}</th>
               <th>{{delivery.deliveryMan}}</th>
-              <th><i class="dropdown-toggle dropdown-toggle-split"></i></th>
               <th>
-
+                <app-modal [id]="delivery.id" [adressee]="delivery.adressee"
+                  [adresseeDirection]="delivery.adresseeDirection" [deliverer]="delivery.deliverer"
+                  [delivererDirection]="delivery.delivererDirection" [deliveryMan]="delivery.deliveryMan"
+                  [status]="delivery.status" [description]="delivery.description"></app-modal>
               </th>
             </tr>
           </tbody>

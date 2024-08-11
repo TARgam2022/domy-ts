@@ -1,0 +1,48 @@
+<ng-template keyboard="true" #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Detalle del Domicilio #{{id}}</h4>
+    </div>
+    <div class="modal-body">
+
+        <div class="row">
+            <div class="col-md-6">
+                <p><b>Remitente:</b></p>
+                <p>{{adressee}}</p>
+            </div>
+            <div class="col-md-6">
+                <p><b>Direccion Remitente:</b></p>
+                <p>{{adresseeDirection}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p><b>Destinatario:</b></p>
+                <p>{{deliverer}}</p>
+            </div>
+            <div class="col-md-6">
+                <p><b>Direccion Destinatario:</b></p>
+                <p>{{delivererDirection}}</p>
+            </div>
+        </div>
+        <p class="row"><b>Progreso:</b></p>
+        <ngb-progressbar-stacked class="bar">
+            <ngb-progressbar type="success" height="40px" [value]="20" [striped]="true">Pedido en
+                Progreso</ngb-progressbar>
+            <ngb-progressbar type="dark" height="40px" [value]="20" [striped]="true">progress 2</ngb-progressbar>
+            <ngb-progressbar type="dark" height="40px" [value]="20" [striped]="true">progress 3</ngb-progressbar>
+            <ngb-progressbar type="dark" height="40px" [value]="20" [striped]="true">progress 2</ngb-progressbar>
+            <ngb-progressbar type="dark" height="40px" [value]="20" [striped]="true">progress 3</ngb-progressbar>
+        </ngb-progressbar-stacked>
+        <br>
+        <div class="row">
+            <p class="col-md-6"><b>Domiciliario: </b></p>
+            <p class="col-md-6">{{deliveryMan}}</p>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type=" button" class="btn btn-outline-secondary" (click)="modal.close('Save click')">
+            OK</button>
+    </div>
+</ng-template>
+
+<button class="btn btn-outline-secondary" (click)="open(content)">Mas Informacion</button>
