@@ -40,14 +40,18 @@ const routes: Routes = [
         path: 'sample-page',
         loadComponent: () => import('./demo/sample-page/sample-page.component')
       },
-       {
-         path: 'domicilios',
-         loadComponent: () => import('./demo/domicilios/domicilios.component').then((m) => m.DomiciliosComponent)
-       },
-       {
-         path: 'domiciliarios',
-         loadComponent: () => import('./demo/domiciliarios/domiciliarios.component').then((m) => m.DomiciliariosComponent)
-       }
+      {
+        path: 'domicilios',
+        loadComponent: () => import('./demo/domicilios/domicilios.component').then((m) => m.DomiciliosComponent)
+      },
+      {
+        path: 'domiciliarios',
+        loadComponent: () => import('./demo/domiciliarios/domiciliarios.component').then((m) => m.DomiciliariosComponent)
+      },
+      {
+        path: 'tus-pedidos',
+        loadComponent: () => import('./demo/your-deliveries/your-deliveries.component').then((m) => m.YourDeliveriesComponent)
+      }
     ]
   },
   {
@@ -70,4 +74,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

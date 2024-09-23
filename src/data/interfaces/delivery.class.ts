@@ -7,4 +7,5 @@ export interface delivery {
     deliveryMan: string;
     description: string;
     status: number;
+    chat: Array<string>;
 }
