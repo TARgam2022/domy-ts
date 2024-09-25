@@ -24,14 +24,29 @@
                 <p>{{delivererDirection}}</p>
             </div>
         </div>
-        <p class="row"><b>Progreso:</b></p>
+        <p class="row"><b>Progreso: {{status}}</b></p>
+
         <ngb-progressbar-stacked class="bar">
+            @if (status >= 1) {
             <ngb-progressbar type="success" height="40px" [value]="20" [striped]="true">Pedido en
                 Progreso</ngb-progressbar>
-            <ngb-progressbar type="dark" height="40px" [value]="20" [striped]="true">progress 2</ngb-progressbar>
-            <ngb-progressbar type="dark" height="40px" [value]="20" [striped]="true">progress 3</ngb-progressbar>
-            <ngb-progressbar type="dark" height="40px" [value]="20" [striped]="true">progress 2</ngb-progressbar>
-            <ngb-progressbar type="dark" height="40px" [value]="20" [striped]="true">progress 3</ngb-progressbar>
+            }@else{}
+            @if (status >= 2) {
+            <ngb-progressbar type="success" height="40px" [value]="20" [striped]="true">Pedido en
+                Progreso</ngb-progressbar>
+            }@else{}
+            @if (status >= 3) {
+            <ngb-progressbar type="success" height="40px" [value]="20" [striped]="true">Pedido en
+                Progreso</ngb-progressbar>
+            }@else{}
+            @if (status >= 4) {
+            <ngb-progressbar type="success" height="40px" [value]="20" [striped]="true">Pedido en
+                Progreso</ngb-progressbar>
+            }@else{}
+            @if (status == 5) {
+            <ngb-progressbar type="success" height="40px" [value]="20" [striped]="true">Pedido en
+                Progreso</ngb-progressbar>
+            }@else{}
         </ngb-progressbar-stacked>
         <br>
         <div class="row">

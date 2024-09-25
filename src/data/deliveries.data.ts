@@ -9,6 +9,6 @@ export let DELIVERIES: delivery[] = [
         delivererDirection: "delivererDirection",
         deliveryMan: "deliveryMan",
         description: "Lorem Ipsum It dolor",
-        status: 2
+        status: 2,
     },
 ]

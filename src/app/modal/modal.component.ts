@@ -34,11 +34,6 @@ export class ModalComponent {
     }
   }
 
-  constructor(config: NgbProgressbarConfig) {
-    config.animated = true;
-
-  }
-
   @Input({ required: true }) id = 1;
   @Input({ required: true }) adressee = "hola";
   @Input({ required: true }) adresseeDirection = "hola";
@@ -47,4 +42,10 @@ export class ModalComponent {
   @Input({ required: true }) deliveryMan = "hola";
   @Input({ required: true }) description = "hola";
   @Input({ required: true }) status = 2;
+
+  constructor(config: NgbProgressbarConfig) {
+    config.animated = true;
+  }
+  statusTest = 3
+
 }

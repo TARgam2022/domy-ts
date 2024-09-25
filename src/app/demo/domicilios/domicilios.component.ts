@@ -37,7 +37,7 @@ export class DomiciliosComponent {
       delivererDirection: this.delivererDirection,
       deliveryMan: this.deliveryMan,
       description: this.description,
-      status: 0
+      status: 0,
     });
     console.log({
       id: DELIVERIES.length + 1,

@@ -1,3 +1,4 @@
+import { message } from "./message.class";
 export interface delivery {
     id: number;
     adressee: string;
