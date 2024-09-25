@@ -10,6 +10,5 @@ export let DELIVERIES: delivery[] = [
         deliveryMan: "deliveryMan",
         description: "Lorem Ipsum It dolor",
         status: 2,
-        chat: ["hola", "hola"]
     },
 ]

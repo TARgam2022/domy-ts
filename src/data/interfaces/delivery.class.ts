@@ -1,3 +1,4 @@
+import { message } from "./message.class";
 export interface delivery {
     id: number;
     adressee: string;
@@ -7,5 +8,4 @@ export interface delivery {
     deliveryMan: string;
     description: string;
     status: number;
-    chat: Array<string>;
 }

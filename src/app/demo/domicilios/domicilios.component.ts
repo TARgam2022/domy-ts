@@ -38,7 +38,6 @@ export class DomiciliosComponent {
       deliveryMan: this.deliveryMan,
       description: this.description,
       status: 0,
-      chat: []
     });
     console.log({
       id: DELIVERIES.length + 1,

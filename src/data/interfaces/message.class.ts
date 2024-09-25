@@ -1,1 +1,5 @@
-export interface message { }
+export interface message {
+    name: string;
+    role: string;
+    message: string;
+}
