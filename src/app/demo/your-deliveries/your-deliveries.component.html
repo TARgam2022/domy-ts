@@ -1,4 +1,44 @@
-<app-card cardTitle="Informacion del Domicilio" blockClass="m-t-10" [options]="false">
+<app-card cardTitle="Estado del Domicilio" blockClass="m-t-10" [options]="false">
+    <div class="row box flex-nowrap">
+        <div class="col text nopadding">@if (status >= 1) {<ng-icon name="matCheckRound"
+                class="icon-complete"></ng-icon>}@else {<ng-icon name="matCheckRound"
+                class="icon-incomplete"></ng-icon>}</div>
+
+        <div class="col text nopadding arrow"><ng-icon name="matArrowForwardRound" class="icon"></ng-icon></div>
+
+        <div class="col text nopadding">@if (status >= 2) {<ng-icon name="matMotorcycleRound"
+                class="icon-complete"></ng-icon>}@else {<ng-icon name="matMotorcycleRound"
+                class="icon-incomplete"></ng-icon>}</div>
+
+        <div class="col text nopadding arrow"><ng-icon name="matArrowForwardRound" class="icon"></ng-icon></div>
+
+        <div class="col text nopadding">@if (status >= 3) {<ng-icon name="matMarkunreadMailboxRound"
+                class="icon-complete"></ng-icon>}@else {<ng-icon name="matMarkunreadMailboxRound"
+                class="icon-incomplete"></ng-icon>}</div>
+
+        <div class="col text nopadding arrow"><ng-icon name="matArrowForwardRound" class="icon"></ng-icon></div>
+
+        <div class="col text nopadding">@if (status >= 4) {<ng-icon name="matMotorcycleRound"
+                class="icon-complete"></ng-icon>}@else {<ng-icon name="matMotorcycleRound"
+                class="icon-incomplete"></ng-icon>}</div>
+
+        <div class="col text nopadding arrow"><ng-icon name="matArrowForwardRound" class="icon"></ng-icon></div>
+
+        <div class="col text nopadding">@if (status == 5) {<ng-icon name="matLocationOnRound"
+                class="icon-complete"></ng-icon>}@else {<ng-icon name="matLocationOnRound"
+                class="icon-incomplete"></ng-icon>}</div>
+    </div>
+    <div class="row box flex-nowrap">
+        <div class="col text nopadding">Creado</div>
+        <div class="col text nopadding arrow"></div>
+        <div class="col text nopadding">En camino</div>
+        <div class="col text nopadding arrow"></div>
+        <div class="col text nopadding">Recogido</div>
+        <div class="col text nopadding arrow"></div>
+        <div class="col text nopadding">En camino</div>
+        <div class="col text nopadding arrow"></div>
+        <div class="col text nopadding">Entregado</div>
+    </div>
 </app-card>
 <app-card cardTitle="Chat" blockClass="m-t-10" [options]="false">
     <div class="row" style="overflow-y: auto; overflow-x:hidden; height: 300px;">
@@ -15,5 +55,51 @@
         <input type="text" class="form-control" placeholder="Enviar un mensaje . . ." aria-label="Recipient's username"
             aria-describedby="button-addon2" [(ngModel)]="message" required />
         <button class="btn btn-primary" type="submit" id="button-addon2" (click)="sendMessage()">enviar</button>
+    </div>
+</app-card>
+<app-card cardTitle="Informacion del Domicilio" blockClass="m-t-10" [options]="false">
+    <div class="row">
+        <h4>Informacion del remitente:</h4>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <h5><ng-icon name="matLocationOnRound"></ng-icon> Direccion:</h5>
+            <p style="font-size: 20px;">Primavera</p>
+        </div>
+        <div class="col-md-6">
+            <h5><ng-icon name="matPersonRound"></ng-icon> Nombre:</h5>
+            <p style="font-size: 20px;">Corral hamburguesas</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <h4>Informacion del Destinatario:</h4>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <h5><ng-icon name="matMyLocationRound"></ng-icon> Direccion:</h5>
+            <p style="font-size: 20px;">Apartamento 604 torre el plaza</p>
+        </div>
+        <div class="col-md-6">
+            <h5><ng-icon name="matPersonRound"></ng-icon> Nombre:</h5>
+            <p style="font-size: 20px;">hello world</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <h4>Informacion extra:</h4>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <h5><ng-icon name="matInfoRound"></ng-icon> Descripcion:</h5>
+            <p style="font-size: 20px;">hello world</p>
+        </div>
+        <div class="col-md-6">
+            <h5><ng-icon name="matMotorcycleRound"></ng-icon> Domiciliario:</h5>
+            <p style="font-size: 20px;">hello world</p>
+        </div>
     </div>
 </app-card>
