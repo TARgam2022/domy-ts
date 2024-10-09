@@ -1,0 +1,16 @@
+<ng-template keyboard="true" #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Confirmar</h4>
+    </div>
+    <div class="modal-body">
+        Deseas avanzar el estado del pedido?
+    </div>
+    <div class="modal-footer">
+        <button type=" button" class="btn btn-success" (click)="modal.close('Save click'); changeState(state + 1);">
+            Confirmar</button>
+        <button type=" button" class="btn btn-danger" (click)="modal.close('Save click')">
+            Cancelar</button>
+    </div>
+</ng-template>
+
+<button class="btn btn-success" (click)="open(content)">Avanzar el pedido</button>

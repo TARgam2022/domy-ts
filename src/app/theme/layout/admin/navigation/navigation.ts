@@ -44,9 +44,26 @@ export const NavigationItems: NavigationItem[] = [
   },
   {
     id: 'forms',
-    title: 'Tus Pedidos',
+    title: 'Usuarios',
     type: 'item',
-    url: '/tus-pedidos',
+    url: '/pagina-usuario',
+    classes: 'nav-item',
+    icon: 'feather icon-file-text'
+  }
+  ,
+  {
+    id: 'forms',
+    title: 'Usuarios',
+    type: 'item',
+    url: '/pagina-usuario',
+    classes: 'nav-item',
+    icon: 'feather icon-file-text'
+  },
+  {
+    id: 'forms',
+    title: 'Domys',
+    type: 'item',
+    url: '/pagina-domy',
     classes: 'nav-item',
     icon: 'feather icon-file-text'
   }

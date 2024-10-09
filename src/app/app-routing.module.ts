@@ -49,8 +49,12 @@ const routes: Routes = [
         loadComponent: () => import('./demo/domiciliarios/domiciliarios.component').then((m) => m.DomiciliariosComponent)
       },
       {
-        path: 'tus-pedidos',
-        loadComponent: () => import('./demo/your-deliveries/your-deliveries.component').then((m) => m.YourDeliveriesComponent)
+        path: 'pagina-usuario',
+        loadComponent: () => import('./demo/user-page/your-deliveries.component').then((m) => m.YourDeliveriesComponent)
+      },
+      {
+        path: 'pagina-domy',
+        loadComponent: () => import('./demo/domy-page/domy-page.component').then((m) => m.DomyPageComponent)
       }
     ]
   },
