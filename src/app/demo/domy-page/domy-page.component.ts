@@ -5,17 +5,17 @@ import { FormsModule } from '@angular/forms';
 import { CHAT } from 'src/data/chat.data';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { matLocationOnRound, matCheckRound, matMarkunreadMailboxRound, matMyLocationRound, matPersonRound, matMotorcycleRound, matInfoRound, matArrowForwardRound } from '@ng-icons/material-icons/round'
+import { ConfirmModalComponent } from 'src/app/confirm-modal/confirm-modal.component';
 
 @Component({
-  selector: 'app-your-deliveries',
+  selector: 'app-domy-page',
   standalone: true,
-  imports: [CardComponent, MessageComponent, FormsModule, NgIconComponent],
+  imports: [CardComponent, MessageComponent, FormsModule, NgIconComponent, ConfirmModalComponent],
+  templateUrl: './domy-page.component.html',
+  styleUrl: './domy-page.component.scss',
   viewProviders: [provideIcons({ matLocationOnRound, matCheckRound, matMarkunreadMailboxRound, matMyLocationRound, matPersonRound, matMotorcycleRound, matInfoRound, matArrowForwardRound })],
-  templateUrl: './your-deliveries.component.html',
-  styleUrl: './your-deliveries.component.scss'
 })
-
-export class YourDeliveriesComponent {
+export class DomyPageComponent {
   chat = CHAT;
   message = "";
   status = 3;
@@ -26,4 +26,9 @@ export class YourDeliveriesComponent {
       message: this.message
     });
   }
+
+  handleData(status: number) {
+    this.status = status;
+  }
+
 }
