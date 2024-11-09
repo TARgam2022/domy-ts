@@ -49,15 +49,6 @@ export const NavigationItems: NavigationItem[] = [
     url: '/pagina-usuario',
     classes: 'nav-item',
     icon: 'feather icon-file-text'
-  }
-  ,
-  {
-    id: 'forms',
-    title: 'Usuarios',
-    type: 'item',
-    url: '/pagina-usuario',
-    classes: 'nav-item',
-    icon: 'feather icon-file-text'
   },
   {
     id: 'forms',

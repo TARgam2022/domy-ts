@@ -42,7 +42,7 @@
 </app-card>
 <app-card cardTitle="Cambiar estado del Domicilio" blockClass="m-t-10" [options]="false">
     <div class="d-flex justify-content-around   ">
-        {{status}}
+        <button class="btn btn-danger" (click)="restart()">restart</button>
         <app-confirm-modal [state]="status" (status)="handleData($event)"></app-confirm-modal>
     </div>
 </app-card>

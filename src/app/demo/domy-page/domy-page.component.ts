@@ -6,6 +6,8 @@ import { CHAT } from 'src/data/chat.data';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { matLocationOnRound, matCheckRound, matMarkunreadMailboxRound, matMyLocationRound, matPersonRound, matMotorcycleRound, matInfoRound, matArrowForwardRound } from '@ng-icons/material-icons/round'
 import { ConfirmModalComponent } from 'src/app/confirm-modal/confirm-modal.component';
+import { StatusService } from 'src/services/status.service';
+import { OnInit, ChangeDetectorRef } from '@angular/core'
 
 @Component({
   selector: 'app-domy-page',
@@ -15,10 +17,21 @@ import { ConfirmModalComponent } from 'src/app/confirm-modal/confirm-modal.compo
   styleUrl: './domy-page.component.scss',
   viewProviders: [provideIcons({ matLocationOnRound, matCheckRound, matMarkunreadMailboxRound, matMyLocationRound, matPersonRound, matMotorcycleRound, matInfoRound, matArrowForwardRound })],
 })
-export class DomyPageComponent {
+export class DomyPageComponent implements OnInit{
+
+  constructor(private statusService: StatusService, private changeDetectorRef: ChangeDetectorRef) {}
+
   chat = CHAT;
+
   message = "";
-  status = 3;
+  
+ngOnInit() {
+  // ...
+  this.statusService.status$.subscribe(status => {
+    this.status = status;
+    this.changeDetectorRef.detectChanges();
+  });
+}
   sendMessage() {
     CHAT.push({
       name: "Thomas",
@@ -26,9 +39,13 @@ export class DomyPageComponent {
       message: this.message
     });
   }
-
-  handleData(status: number) {
+status:number = 1;
+  
+handleData(status: number) {
     this.status = status;
+    this.statusService.updateStatus(this.status);
   }
-
+  restart(){
+    this.statusService.updateStatus(1);
+  }
 }
